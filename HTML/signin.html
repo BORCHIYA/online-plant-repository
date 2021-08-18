@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E:\online_plant_nursery\CSS\sigin.css">
+    <style>
+        body{
+    background-image: url("signinbackground.jpg");
+    background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+</style>
+<script>
+function call()
+{
+    alert("We Welcome The New Member of Sugar Land Family");
+    window.location="Page1.html";
+}
+</script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-3">
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <nav class="navbar">
+                <a href="Page1.html">Home</a>
+                <a href="contact.html" >Contact</a>
+                <a href="about.html">About</a>
+                <a href="login.html" style="color:green">Login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="headline">
+            <h1>Welcome to Sugar Land.</h1>
+            <h2>Plants at low cost and high quality</h2>
+        </div>
+        <form class="form" method="post" action="#">
+            <div class="signup">
+                <div class="form-group">
+                    <input type="text" placeholder="Full name" required="">
+                </div>
+                <div class="form-group">
+               <input type="email" placeholder="Email" required=" ">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required="">
+                </div>
+                <div class="form-group">
+                    <input type="tel" minlength="6" placeholder="MOBILE NUMBER" required="">
+                </div>
+                <button type="submit" class="btn" onclick="call()">SIGN UP</a></button>
+                    </a>
+                <div class="account-exist">
+                    Already have an account? <a href="login.html" id="login">Login</a>
+                </div>
+            </div>
+         
+</body>
+</html>

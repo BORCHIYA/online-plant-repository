@@ -1,0 +1,56 @@
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border:.1rem solid rgba(0,0,0,.3);
+  }
+  
+  .contact .row .map{
+    width:100%;
+    flex:1 1 40rem;
+  }
+  
+  .contact .row form{
+    padding:2rem;
+    flex:1 1 40rem;
+  }
+  
+  .contact .row form .inputBox{
+    position: relative;
+  }
+  
+  .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+    width:100%;
+    border-bottom: .1rem solid rgba(0,0,0,.3);
+    padding:1rem 0;
+    margin:1.5rem 0;
+    font-size: 1.7rem;
+    text-transform: none;
+    color:#333;
+  }
+  
+  .contact .row form .inputBox textarea{
+    resize: none;
+    height:15rem;
+  }
+  
+  .contact .row form .inputBox input:focus,
+  .contact .row form .inputBox textarea:focus{
+    border-color: var(--green);
+  }
+  
+  .contact .row form .inputBox label{
+    position: absolute;
+    top:2.3rem; left:0;
+    font-size: 1.7rem;
+  }
+  
+  .contact .row form .inputBox input:focus ~ label,
+  .contact .row form .inputBox textarea:focus ~ label,
+  .contact .row form .inputBox input:valid ~ label,
+  .contact .row form .inputBox textarea:valid ~ label{
+    top:-.1rem;
+    font-size: 1.5rem;
+    color:#666;
+  }
+  
